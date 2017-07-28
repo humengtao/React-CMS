@@ -7,7 +7,7 @@ class Header extends React.Component {
     render() {
         return (
             <div>
-                <h1 className="title"> Hello <br/>React-Redux-Webpack-NodeJs-Mysql<br/></h1>
+                <h1 className="title">React-CMS <br/> With <br/>React-Redux-Webpack-NodeJs-Mysql<br/> Enjoy !!</h1>
             </div>
         )
     }
