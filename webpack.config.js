@@ -9,7 +9,8 @@ module.exports = {
         ],
         vendor: [
             "react",
-            "react-dom"
+            "react-dom",
+            "react-router-dom"
         ]
     },
     output: {
