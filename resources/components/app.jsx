@@ -4,13 +4,19 @@
 import React from 'react';
 import Header from './header.jsx';
 import Footer from './footer.jsx';
+import {Link} from 'react-router';
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <Header/>
-                <Footer/>
+                {this.props.children}
+                <ul>
+                    <li><Link to="/header">header</Link>
+                    </li>
+                    <li><Link to="/footer">footer</Link>
+                    </li>
+                </ul>
             </div>
         )
     }
