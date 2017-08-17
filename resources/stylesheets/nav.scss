@@ -1,0 +1,48 @@
+.nav {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  .logo {
+    font-size: 25px;
+    padding: 0px 25px;
+    color: #ffffff;
+  }
+  .ul {
+    float: right;
+    padding-right: 30px;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    li {
+      float: left;
+      margin-left: 25px;
+      font-size: 16px;
+      a {
+        color: #ffffff;
+        &:hover{
+          text-decoration:none;
+          color: #999999;
+        }
+      }
+    }
+  }
+  .set {
+    width: 20px;
+    height: 40px;
+    float: right;
+    margin-right: 20px;
+    padding-top: 20px;
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+    span {
+      display: block;
+      width: 18px;
+      height: 2px;
+      background-color: #ffffff;
+      margin-top: 4px;
+    }
+  }
+}

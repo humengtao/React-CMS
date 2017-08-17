@@ -28,12 +28,15 @@ module.exports = {
             test: /\.jsx?$/,
             exclude: /node_modules/,
             use: ['babel-loader']
+        },{
+            test: /\.(png|jpg)$/,
+            use: ['url-loader?limit=8192&name=images/[hash:8].[name].[ext]']
         }]
     },
     devServer: {
         historyApiFallback: true,
         publicPath: "http://localhost:8080/public/",
-        port: 12345,
+        port: 54321,
         contentBase: path.join(__dirname, "./"),
         hot: true
     },

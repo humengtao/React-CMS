@@ -1,18 +1,16 @@
-/**
- * Created by humengtao on 2017/7/27.
- */
 import React from 'react';
+import {Link} from 'react-router';
 
-class Footer extends React.Component {
-    render() {
-        return (
-            <div>
-                <h2 className="footer">Powered By
-                    @ <a className="author" href="#"> Dandy</a> & <a className="author" href="#">Jiayalili</a> . Licence MIT
-                </h2>
+class Footer extends React.Component{
+    render(){
+        return(
+            <div className="footer">
+                <p>Copyright © Jyl Blog 2017 </p>
+                <p>Theme by  <Link to="/">Jyl</Link></p>
             </div>
         )
     }
 }
 
-export default Footer;
+import '../stylesheets/footer.scss'
+export  default Footer;
